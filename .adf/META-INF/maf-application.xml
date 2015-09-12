@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <adfmf:application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adfmf="http://xmlns.oracle.com/adf/mf"
-                   version="1.0" name="REPError" id="com.company.REPError" appControllerFolder="ApplicationController"
-                   listener-class="br.com.decade.reperror.application.LifeCycleListenerImpl"></adfmf:application>
+                   version="1.0.0" name="REP-Error" id="br.com.decade.REPError" appControllerFolder="ApplicationController"
+                   listener-class="br.com.decade.reperror.application.LifeCycleListenerImpl">
+  <adfmf:description>Oracle Reports Error</adfmf:description>
+  <adfmf:featureReference refId="main" id="fr1"/>
+  <adfmf:navigation>
+    <adfmf:navigationBar enabled="false"/>
+  </adfmf:navigation>
+</adfmf:application>

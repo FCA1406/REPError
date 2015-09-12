@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.23.11" id="errorDataPageDef"
+                Package="Main">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables">
+      <variable Type="java.lang.String" Name="findError_repError" IsQueriable="false"/>
+    </variableIterator>
+    <iterator Binds="root" RangeSize="25" DataControl="REPErrorDC" id="REPErrorDCIterator"/>
+    <accessorIterator MasterBinding="REPErrorDCIterator" Binds="REPErrorVO" RangeSize="25" DataControl="REPErrorDC"
+                      BeanClass="br.com.decade.reperror.server.REPErrorBO" id="REPErrorVOIterator"/>
+  </executables>
+  <bindings>
+    <methodAction id="makeFavorite" RequiresUpdateModel="true" Action="invokeMethod" MethodName="makeFavorite"
+                  IsViewObjectMethod="false" DataControl="REPErrorDC" InstanceName="data.REPErrorDC.dataProvider">
+      <NamedData NDName="code" NDValue="#{bindings.code.inputValue}" NDType="java.lang.String"/>
+      <NamedData NDName="favorite" NDValue="#{pageFlowScope.mainBean.makeFavorite}" NDType="java.lang.String"/>
+    </methodAction>
+    <attributeValues IterBinding="REPErrorVOIterator" id="code">
+      <AttrNames>
+        <Item Value="code"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="REPErrorVOIterator" id="erro">
+      <AttrNames>
+        <Item Value="erro"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="REPErrorVOIterator" id="cause">
+      <AttrNames>
+        <Item Value="cause"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="REPErrorVOIterator" id="action">
+      <AttrNames>
+        <Item Value="action"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="REPErrorVOIterator" id="nivel">
+      <AttrNames>
+        <Item Value="nivel"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="REPErrorVOIterator" id="tipo">
+      <AttrNames>
+        <Item Value="tipo"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="REPErrorVOIterator" id="impact">
+      <AttrNames>
+        <Item Value="impact"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="REPErrorVOIterator" id="favorite">
+      <AttrNames>
+        <Item Value="favorite"/>
+      </AttrNames>
+    </attributeValues>
+    <methodAction id="findError" RequiresUpdateModel="true" Action="invokeMethod" MethodName="findError"
+                  IsViewObjectMethod="false" DataControl="REPErrorDC" InstanceName="data.REPErrorDC.dataProvider">
+      <NamedData NDName="repError" NDValue="#{pageFlowScope.mainBean.findError}" NDType="java.lang.String"/>
+    </methodAction>
+  </bindings>
+</pageDefinition>
