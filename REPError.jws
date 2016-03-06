@@ -34,6 +34,7 @@
             <hash n="android_options">
                <value n="android_deploy_debug_mode" v="false"/>
                <value n="application_bundle_id" v="br.com.decade.reperror"/>
+               <value n="version_code" v="2"/>
             </hash>
             <hash n="archiveOptions">
                <value n="hasManifest" v="true"/>
@@ -121,7 +122,8 @@
             <hash n="iosDeploymentOptions">
                <value n="appBundleId" v="br.com.decade.reperror"/>
                <value n="debugFlag" v="false"/>
-               <value n="simulatorTarget" v="iPad Retina (iOS 8.4 - iPad Retina)"/>
+               <value n="simulatorDeviceId" v="2E68B70B-0E17-4AFD-8AB0-D6EBED3EBCC9"/>
+               <value n="simulatorTarget" v="iPhone 4s (iOS 9.2 - iPhone 4s)"/>
             </hash>
             <url n="jarURL" path="deploy/iOS/iOS.jar/"/>
             <value n="profileClass" v="oracle.adfmf.framework.dt.deploy.ios.McIosFrameworkProfile"/>
@@ -148,7 +150,9 @@
             </hash>
             <hash/>
          </list>
-         <list n="url-path"/>
+         <list n="url-path">
+            <url path="src/"/>
+         </list>
       </hash>
    </hash>
    <hash n="ResourceBundleOptions">
