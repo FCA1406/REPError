@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title> </title>
+<style type="text/css">
+* {
+  font-family: system, -apple-system, 'Helvetica Neue', 'Segoe UI', Segoe, Arial, Tahoma, Geneva, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #00ff00;
+}
+.background,
+.logo,
+.copyright {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.background {
+  background-color: #00ff00;
+}
+.logo {
+  background-image: url(data:image/png;base64,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);
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+.copyright {
+  background-color: white;
+  color: black;
+  text-align: center;
+  top: auto;
+  padding: 20px 10px;
+  font-size: 16px;
+}
+@media only screen and (max-width: 600px) {
+  .copyright {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .copyright {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .copyright {
+    font-size: 9px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="background"><div class="logo"></div></div>
+<div class="copyright">Powered By Decade Technologies</div>
+</body>
+</html>
