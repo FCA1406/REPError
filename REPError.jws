@@ -7,11 +7,12 @@
       <value n="oracle.adf.share.dt.migration.wsm.PolicyAttachmentMigratorHelper" v="12.1.2.0.0"/>
       <value n="oracle.adfdt.controller.adfc.source.migration.SavePointDataSourceForWLSMigrator" v="11.1.1.1.0"/>
       <value n="oracle.adfdtinternal.model.ide.security.extension.AdfSecurityMigrator" v="11.1.1.1.0.13"/>
-      <value n="oracle.ide.model.Project" v="11.1.1.1.0;12.1.3.0.0"/>
+      <value n="oracle.ide.model.Project" v="11.1.1.1.0;12.1.3.0.0;12.2.1.0.0"/>
       <value n="oracle.jbo.dt.jdevx.deployment.JbdProjectMigrator" v="11.1.2.0.0"/>
+      <value n="oracle.jdeveloper.maven.migrator.POMNodeMigrator" v="12.2.1.0.0"/>
       <value n="oracle.jdevimpl.appresources.ApplicationSrcDirMigrator" v="11.1.2.0.0"/>
       <value n="oracle.jdevimpl.deploy.migrators.JeeDeploymentMigrator" v="12.1.2.0.0"/>
-      <value n="oracle.jdevimpl.xml.oc4j.jps.JpsConfigMigratorHelper" v="11.1.1.1.0.1"/>
+      <value n="oracle.jdevimpl.xml.oc4j.jps.JpsConfigMigratorHelper" v="11.1.1.1.0.1;12.1.4.0.0"/>
       <value n="oracle.jdevimpl.xml.wl.WeblogicMigratorHelper" v="11.1.1.1.0"/>
       <value n="oracle.mds.internal.dt.deploy.base.MarMigratorHelper" v="11.1.1.1.0"/>
       <value n="oracle.mds.internal.dt.ide.migrator.MDSConfigMigratorHelper" v="11.1.1.0.5313"/>
@@ -34,7 +35,7 @@
             <hash n="android_options">
                <value n="android_deploy_debug_mode" v="false"/>
                <value n="application_bundle_id" v="br.com.decade.reperror"/>
-               <value n="version_code" v="2"/>
+               <value n="version_code" v="3"/>
             </hash>
             <hash n="archiveOptions">
                <value n="hasManifest" v="true"/>
@@ -122,10 +123,42 @@
             <hash n="iosDeploymentOptions">
                <value n="appBundleId" v="br.com.decade.reperror"/>
                <value n="debugFlag" v="false"/>
-               <value n="simulatorDeviceId" v="2E68B70B-0E17-4AFD-8AB0-D6EBED3EBCC9"/>
-               <value n="simulatorTarget" v="iPhone 4s (iOS 9.2 - iPhone 4s)"/>
+               <value n="simulatorDeviceId" v="1A2191EE-7E78-4BB7-BEFD-06946B64D85E"/>
+               <value n="simulatorTarget" v="iPhone 4s (iOS 9.3 - iPhone 4s)"/>
             </hash>
             <url n="jarURL" path="deploy/iOS/iOS.jar/"/>
+            <hash n="mnfImageOptions">
+               <list n="deviceTypes">
+                  <hash>
+                     <value n="deviceTypeName" v="iPhone Retina"/>
+                  </hash>
+                  <hash>
+                     <value n="deviceTypeName" v="iPad Mini"/>
+                  </hash>
+                  <hash>
+                     <value n="deviceTypeName" v="iPhone 5"/>
+                  </hash>
+                  <hash>
+                     <value n="deviceTypeName" v="iPad"/>
+                  </hash>
+                  <hash>
+                     <value n="deviceTypeName" v="iPad Retina"/>
+                  </hash>
+               </list>
+               <value n="imageResourceBaseDir" v="resources/ios/"/>
+               <value n="IPAD_NON_RETINA_7_APP_IMAGE" v="resources/ios/Icon-76.png"/>
+               <value n="IPAD_NON_RETINA_7_SETTINGS" v="resources/ios/Icon-29.png"/>
+               <value n="IPAD_NON_RETINA_7_SPOTLIGHT" v="resources/ios/Icon-40.png"/>
+               <value n="IPAD_PRO_RETINA_APP_IMAGE" v="resources/ios/Icon-83.5@2x.png"/>
+               <value n="IPAD_RETINA_7_APP_IMAGE" v="resources/ios/Icon-76@2x.png"/>
+               <value n="IPAD_RETINA_7_SETTINGS" v="resources/ios/Icon-29@2x.png"/>
+               <value n="IPAD_RETINA_7_SPOTLIGHT" v="resources/ios/Icon-40@2x.png"/>
+               <value n="IPHONE_6_PLUS_APP_IMAGE" v="resources/ios/Icon-60@3x.png"/>
+               <value n="IPHONE_6_PLUS_SETTINGS" v="resources/ios/Icon-29@3x.png"/>
+               <value n="IPHONE_6_PLUS_SPOTLIGHT" v="resources/ios/Icon-40@3x.png"/>
+               <value n="IPHONE_RETINA_7_APP_IMAGE" v="resources/ios/Icon-120.png"/>
+               <value n="itunesArtwork" v="resources/ios/iTunesArtwork.png"/>
+            </hash>
             <value n="profileClass" v="oracle.adfmf.framework.dt.deploy.ios.McIosFrameworkProfile"/>
             <value n="profileName" v="iOS"/>
          </hash>
